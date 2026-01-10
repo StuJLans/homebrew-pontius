@@ -10,16 +10,16 @@ class Pontius < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StuJLans/pontius/releases/download/v1.0.0/pontius_1.0.0_darwin_amd64.tar.gz"
-      sha256 "230d33d9836c2491ea9999211935439c427ae72c151e3a41b70b090a24b49230"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.0.0/pontius_1.0.0_darwin_amd64.tar.gz"
+      sha256 "318336eb16f7e42b106b4411412a02387b3eefc5a39f23a753db41ddc37a58c0"
 
       def install
         bin.install "pontius"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StuJLans/pontius/releases/download/v1.0.0/pontius_1.0.0_darwin_arm64.tar.gz"
-      sha256 "0cb1871d50b2cb2bacb8cb7d140b0bfe9bbfa4a6107e5264d796157404bb1364"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.0.0/pontius_1.0.0_darwin_arm64.tar.gz"
+      sha256 "56c66b4fdda6c9a2fcfd1d41b355d7f7e9bd852ad2a0e4a31ce8c734858eb144"
 
       def install
         bin.install "pontius"
@@ -29,15 +29,15 @@ class Pontius < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuJLans/pontius/releases/download/v1.0.0/pontius_1.0.0_linux_amd64.tar.gz"
-      sha256 "33e9cd07d4724c69bdf32c0e24ec5e2ebd1ecef8a691dda8b3d1779b44ed5284"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.0.0/pontius_1.0.0_linux_amd64.tar.gz"
+      sha256 "80f532dbcca33871124df5aa49889c87c46493172fc561219d96b15adc6df7b0"
       def install
         bin.install "pontius"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuJLans/pontius/releases/download/v1.0.0/pontius_1.0.0_linux_arm64.tar.gz"
-      sha256 "71eb0b80dc1727a357415f88007254616b3f253ccf6e439f32a9c9600810c2fc"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.0.0/pontius_1.0.0_linux_arm64.tar.gz"
+      sha256 "d4b22ec360126a2ebea6a8deda3b677eeac52171896089cb0baeecacafa80d75"
       def install
         bin.install "pontius"
       end
