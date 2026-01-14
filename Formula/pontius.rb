@@ -5,21 +5,21 @@
 class Pontius < Formula
   desc "Terminal email client for AI-assisted email management"
   homepage "https://getpontius.com"
-  version "1.1.1"
+  version "1.1.2"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.1/pontius_1.1.1_darwin_amd64.tar.gz"
-      sha256 "706317976df58d8554c08b4405fce91e6234395c52f99e7bd83d67a87b3421e8"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.2/pontius_1.1.2_darwin_amd64.tar.gz"
+      sha256 "04d8b3526a9231bb631a63250d8dda431ed1602998de81282455f653fe365780"
 
       def install
         bin.install "pontius"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.1/pontius_1.1.1_darwin_arm64.tar.gz"
-      sha256 "b297cf1a93bf710bb5c0b06871d5293dd1bcdffb1884e3460ac69f9816e479ab"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.2/pontius_1.1.2_darwin_arm64.tar.gz"
+      sha256 "f8b814ee7437833d15396176b8383c7b783f6a03e6789295379967b6947eab85"
 
       def install
         bin.install "pontius"
@@ -29,15 +29,15 @@ class Pontius < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.1/pontius_1.1.1_linux_amd64.tar.gz"
-      sha256 "f3a228a6a62552e4b267e29bca0bb186f182934404f757cb6efee6fd432ee856"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.2/pontius_1.1.2_linux_amd64.tar.gz"
+      sha256 "96d01de7a2fcdcde2902beef0ece79770569f7ac133725026e0464e9d5ba2796"
       def install
         bin.install "pontius"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.1/pontius_1.1.1_linux_arm64.tar.gz"
-      sha256 "0275f033776d54c53f7b178c42251b63a6e345687c44e1279e918f335eb798bb"
+      url "https://github.com/StuJLans/pontius-releases/releases/download/v1.1.2/pontius_1.1.2_linux_arm64.tar.gz"
+      sha256 "f1f03142cb28a8c3fd71e24e7f4d91c835f61feeccef639a59b3fca8c91861ff"
       def install
         bin.install "pontius"
       end
