@@ -11,7 +11,7 @@ class Pontius < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/StuJLans/pontius-releases/releases/download/v2.0.0/pontius_2.0.0_darwin_amd64.tar.gz"
-      sha256 "c97e3c50d369b79869bc78e0fa3ba4dea7a675197380676c5ad7af053b23d19b"
+      sha256 "6bf62be383e30b6ef88c4549b5b5864a73ca44d76ff4d832c5e3f96d3fa3c26c"
 
       define_method(:install) do
         bin.install "pontius"
@@ -19,7 +19,7 @@ class Pontius < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/StuJLans/pontius-releases/releases/download/v2.0.0/pontius_2.0.0_darwin_arm64.tar.gz"
-      sha256 "7c9380b19e211e3df701745979141bc1c73042ec83155cdd37b4d145b796dcf4"
+      sha256 "ca8e378073c948b2ddc858d74f1461d08c4b5617b097d9bb0de0f6f1d1c19039"
 
       define_method(:install) do
         bin.install "pontius"
@@ -30,14 +30,14 @@ class Pontius < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/StuJLans/pontius-releases/releases/download/v2.0.0/pontius_2.0.0_linux_amd64.tar.gz"
-      sha256 "bf248b5dcd5742fa4cc20e0c06f1a843df954aef1611b3ed4fbab48c30d44306"
+      sha256 "161acbd78471fa638ec1e7bcad3eaed91948513645168a86500ca296a7d6d2d0"
       define_method(:install) do
         bin.install "pontius"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/StuJLans/pontius-releases/releases/download/v2.0.0/pontius_2.0.0_linux_arm64.tar.gz"
-      sha256 "6a1c28c84986a2d53dfabf305098f9833b2c849275f88f74d76d93c31b90f0f0"
+      sha256 "89e7d47a371c2aa4e4b06cbd214b3094ff9e6155e1321201a8ba384ab6c415d4"
       define_method(:install) do
         bin.install "pontius"
       end
